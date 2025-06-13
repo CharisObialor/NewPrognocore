@@ -892,7 +892,6 @@ const AboutPage = () => {
                       <span>Machine Learning</span>
                       <span>IoT Systems</span>
                       <span>Data Engineering</span>
-                      <span>Cloud Architecture</span>
                     </div>
                   </div>
                 </div>
