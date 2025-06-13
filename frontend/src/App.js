@@ -709,6 +709,47 @@ const TermsOfService = () => (
   </div>
 );
 
+// Cookie Consent Component
+const CookieConsent = () => {
+  const [showConsent, setShowConsent] = useState(false);
+
+  useEffect(() => {
+    const consent = localStorage.getItem('cookie-consent');
+    if (!consent) {
+      setShowConsent(true);
+    }
+  }, []);
+
+  const acceptCookies = () => {
+    localStorage.setItem('cookie-consent', 'accepted');
+    setShowConsent(false);
+  };
+
+  const declineCookies = () => {
+    localStorage.setItem('cookie-consent', 'declined');
+    setShowConsent(false);
+  };
+
+  if (!showConsent) return null;
+
+  return (
+    <div className="cookie-consent">
+      <div className="cookie-content glass-card">
+        <h4>Cookie Consent</h4>
+        <p>
+          We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. 
+          By clicking "Accept", you consent to our use of cookies. You can manage your preferences anytime.
+        </p>
+        <div className="cookie-buttons">
+          <button onClick={acceptCookies} className="glass-btn primary">Accept All</button>
+          <button onClick={declineCookies} className="glass-btn secondary">Decline</button>
+          <Link to="/privacy" className="cookie-link">Learn More</Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Main App Component
 function App() {
   const [isLoading, setIsLoading] = useState(true);
