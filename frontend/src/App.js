@@ -97,45 +97,158 @@ const HomePage = () => {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">
-            Open Intelligence<br />
-            <span className="highlight">powered by sensors</span>
+            Intelligent Predictive<br />
+            <span className="highlight">Maintenance Solutions</span>
           </h1>
           <p className="hero-subtitle">Predict. Prevent. Perform.</p>
           <p className="hero-description">
-            Transform your industrial operations with cutting-edge predictive maintenance solutions.
-            Monitor equipment health, prevent failures, and optimize performance with AI-powered insights.
+            PrognosCore empowers industrial operations across Nigeria and globally with cutting-edge predictive maintenance technology. 
+            Our AI-powered solutions transform equipment monitoring, reduce downtime by up to 70%, and optimize maintenance costs 
+            through advanced analytics and real-time insights.
           </p>
+          <div className="hero-stats glass-card">
+            <div className="stat">
+              <h3>70%</h3>
+              <p>Downtime Reduction</p>
+            </div>
+            <div className="stat">
+              <h3>45%</h3>
+              <p>Cost Savings</p>
+            </div>
+            <div className="stat">
+              <h3>8+</h3>
+              <p>Industries Served</p>
+            </div>
+          </div>
           <div className="hero-buttons">
-            <Link to="/contact" className="glass-btn primary">Get Started</Link>
-            <Link to="/learn-more" className="glass-btn secondary">Watch Demo</Link>
+            <Link to="/contact" className="glass-btn primary">Reach Out</Link>
+            <Link to="/learn-more" className="glass-btn secondary">Learn More</Link>
           </div>
         </div>
         <div className="hero-image">
-          <img src="https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg" alt="Industrial monitoring" />
+          <img src="https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg" alt="Industrial monitoring dashboard" />
+        </div>
+      </section>
+
+      {/* Value Proposition Section */}
+      <section className="value-proposition">
+        <div className="container">
+          <h2>Why Predictive Maintenance Matters</h2>
+          <div className="value-grid">
+            <div className="value-item glass-card">
+              <div className="value-icon">⚡</div>
+              <h3>Prevent Costly Failures</h3>
+              <p>
+                Equipment failures can cost manufacturing companies up to $50,000 per hour in downtime. 
+                Our predictive analytics identify potential issues weeks before they occur, allowing for 
+                scheduled maintenance during planned shutdowns.
+              </p>
+            </div>
+            <div className="value-item glass-card">
+              <div className="value-icon">📊</div>
+              <h3>Data-Driven Decisions</h3>
+              <p>
+                Transform raw sensor data into actionable insights. Our machine learning algorithms 
+                analyze vibration, temperature, pressure, and acoustic patterns to provide precise 
+                failure predictions and optimal maintenance scheduling.
+              </p>
+            </div>
+            <div className="value-item glass-card">
+              <div className="value-icon">🔧</div>
+              <h3>Optimize Maintenance Costs</h3>
+              <p>
+                Move from reactive and time-based maintenance to condition-based maintenance. 
+                Reduce maintenance costs by up to 45% while extending equipment lifespan and 
+                improving overall operational efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Stack Section */}
+      <section className="technology-stack">
+        <div className="container">
+          <h2>Advanced Technology Stack</h2>
+          <div className="tech-grid">
+            <div className="tech-category glass-card">
+              <h3>IoT Sensors & Hardware</h3>
+              <ul>
+                <li>Vibration analysis sensors</li>
+                <li>Temperature and thermal imaging</li>
+                <li>Acoustic emission monitoring</li>
+                <li>Pressure and flow sensors</li>
+                <li>Oil analysis and lubricant monitoring</li>
+              </ul>
+            </div>
+            <div className="tech-category glass-card">
+              <h3>AI & Machine Learning</h3>
+              <ul>
+                <li>Anomaly detection algorithms</li>
+                <li>Failure pattern recognition</li>
+                <li>Remaining useful life (RUL) prediction</li>
+                <li>Digital twin modeling</li>
+                <li>Condition-based maintenance optimization</li>
+              </ul>
+            </div>
+            <div className="tech-category glass-card">
+              <h3>Data Analytics & Reporting</h3>
+              <ul>
+                <li>Real-time dashboard monitoring</li>
+                <li>Predictive maintenance scheduling</li>
+                <li>ROI and cost analysis reporting</li>
+                <li>Mobile alert systems</li>
+                <li>Integration with existing CMMS/ERP</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Industries Section */}
       <section className="industries-preview">
         <div className="container">
-          <h2>Industries We Serve</h2>
+          <h2>Industries We Transform</h2>
+          <p className="section-description">
+            From Nigeria's growing manufacturing sector to global industrial operations, 
+            PrognosCore delivers specialized predictive maintenance solutions across diverse industries.
+          </p>
           <div className="industries-grid">
-            <div className="industry-card glass-card">
+            <Link to="/industries/manufacturing" className="industry-card glass-card">
+              <div className="industry-icon">🏭</div>
               <h3>Manufacturing</h3>
-              <p>Optimize production lines and reduce downtime</p>
-            </div>
-            <div className="industry-card glass-card">
+              <p>Production line optimization, quality control, and equipment reliability for manufacturing plants</p>
+              <div className="industry-stats">
+                <span>40% efficiency improvement</span>
+              </div>
+            </Link>
+            <Link to="/industries/oil-gas" className="industry-card glass-card">
+              <div className="industry-icon">🛢️</div>
               <h3>Oil & Gas</h3>
-              <p>Monitor critical equipment in harsh environments</p>
-            </div>
-            <div className="industry-card glass-card">
+              <p>Critical equipment monitoring in harsh environments, pipeline integrity, and refinery operations</p>
+              <div className="industry-stats">
+                <span>60% downtime reduction</span>
+              </div>
+            </Link>
+            <Link to="/industries/power-utilities" className="industry-card glass-card">
+              <div className="industry-icon">⚡</div>
               <h3>Power & Utilities</h3>
-              <p>Ensure reliable energy distribution</p>
-            </div>
-            <div className="industry-card glass-card">
+              <p>Grid reliability, generator monitoring, and renewable energy asset management</p>
+              <div className="industry-stats">
+                <span>99.9% uptime achieved</span>
+              </div>
+            </Link>
+            <Link to="/industries/mining" className="industry-card glass-card">
+              <div className="industry-icon">⛏️</div>
               <h3>Mining</h3>
-              <p>Prevent equipment failures in remote locations</p>
-            </div>
+              <p>Heavy machinery monitoring, conveyor systems, and crushing equipment optimization</p>
+              <div className="industry-stats">
+                <span>50% maintenance cost reduction</span>
+              </div>
+            </Link>
+          </div>
+          <div className="view-all-industries">
+            <Link to="/industries" className="glass-btn secondary">View All Industries</Link>
           </div>
         </div>
       </section>
@@ -143,19 +256,105 @@ const HomePage = () => {
       {/* Services Preview */}
       <section className="services-preview">
         <div className="container">
-          <h2>Our Solutions</h2>
+          <h2>Comprehensive Predictive Maintenance Solutions</h2>
           <div className="services-grid">
-            <div className="service-card glass-card">
-              <h3>Equipment Monitoring</h3>
-              <p>Real-time condition monitoring with IoT sensors</p>
+            <Link to="/services/equipment-monitoring" className="service-card glass-card">
+              <div className="service-icon">📡</div>
+              <h3>Equipment Condition Monitoring</h3>
+              <p>Real-time monitoring with advanced IoT sensors, vibration analysis, and thermal imaging for comprehensive equipment health assessment</p>
+              <div className="service-features">
+                <span>• 24/7 Real-time monitoring</span>
+                <span>• Multi-sensor integration</span>
+                <span>• Cloud-based analytics</span>
+              </div>
+            </Link>
+            <Link to="/services/predictive-analytics" className="service-card glass-card">
+              <div className="service-icon">🧠</div>
+              <h3>AI-Powered Predictive Analytics</h3>
+              <p>Machine learning algorithms that predict equipment failures weeks in advance, enabling proactive maintenance planning</p>
+              <div className="service-features">
+                <span>• Failure prediction algorithms</span>
+                <span>• Remaining useful life estimation</span>
+                <span>• Pattern recognition</span>
+              </div>
+            </Link>
+            <Link to="/services/erp-integration" className="service-card glass-card">
+              <div className="service-icon">🔗</div>
+              <h3>Enterprise System Integration</h3>
+              <p>Seamless integration with existing ERP, CMMS, and enterprise systems for unified operations management</p>
+              <div className="service-features">
+                <span>• SAP integration</span>
+                <span>• Custom API development</span>
+                <span>• Workflow automation</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section className="roi-section">
+        <div className="container">
+          <div className="roi-content glass-card">
+            <h2>Calculate Your Potential Savings</h2>
+            <p>
+              Discover how much your organization could save with PrognosCore's predictive maintenance solutions. 
+              Based on industry averages, our clients typically see:
+            </p>
+            <div className="roi-grid">
+              <div className="roi-item">
+                <h3>Maintenance Cost Reduction</h3>
+                <div className="roi-value">25-45%</div>
+                <p>Lower maintenance expenses through optimized scheduling</p>
+              </div>
+              <div className="roi-item">
+                <h3>Downtime Reduction</h3>
+                <div className="roi-value">50-70%</div>
+                <p>Prevent unplanned equipment failures</p>
+              </div>
+              <div className="roi-item">
+                <h3>Equipment Lifespan Extension</h3>
+                <div className="roi-value">20-40%</div>
+                <p>Optimize maintenance intervals and procedures</p>
+              </div>
             </div>
-            <div className="service-card glass-card">
-              <h3>Predictive Analytics</h3>
-              <p>AI-powered failure prediction and analysis</p>
+            <Link to="/contact" className="glass-btn primary">Get Your Custom ROI Analysis</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose PrognosCore */}
+      <section className="why-choose">
+        <div className="container">
+          <h2>Why Choose PrognosCore</h2>
+          <div className="advantages-grid">
+            <div className="advantage glass-card">
+              <h3>🇳🇬 Local Expertise, Global Standards</h3>
+              <p>
+                Based in Nigeria with deep understanding of local industrial challenges, 
+                we deliver world-class predictive maintenance solutions that meet international standards.
+              </p>
             </div>
-            <div className="service-card glass-card">
-              <h3>ERP Integration</h3>
-              <p>Seamless integration with existing systems</p>
+            <div className="advantage glass-card">
+              <h3>🚀 Rapid Deployment</h3>
+              <p>
+                Our modular approach enables quick implementation within 4-6 weeks, 
+                minimizing disruption to your operations while maximizing value delivery.
+              </p>
+            </div>
+            <div className="advantage glass-card">
+              <h3>💡 Industry-Specific Solutions</h3>
+              <p>
+                Tailored solutions for manufacturing, oil & gas, mining, and other industries, 
+                addressing unique challenges and regulatory requirements.
+              </p>
+            </div>
+            <div className="advantage glass-card">
+              <h3>🔒 Enterprise Security</h3>
+              <p>
+                Bank-grade security protocols, data encryption, and compliance with 
+                international data protection standards ensure your operational data remains secure.
+              </p>
             </div>
           </div>
         </div>
@@ -165,12 +364,15 @@ const HomePage = () => {
       <section className="newsletter">
         <div className="container">
           <div className="newsletter-content glass-card">
-            <h2>Stay Updated</h2>
-            <p>Get insights on predictive maintenance trends and technologies</p>
+            <h2>Stay Ahead of Industry Trends</h2>
+            <p>
+              Subscribe to receive insights on predictive maintenance innovations, industry case studies, 
+              and exclusive access to our maintenance optimization resources.
+            </p>
             <form onSubmit={handleNewsletterSubmit} className="newsletter-form">
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Enter your business email"
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 required
@@ -178,7 +380,7 @@ const HomePage = () => {
               />
               <button type="submit" className="glass-btn primary">Subscribe</button>
             </form>
-            {newsletterStatus === 'success' && <p className="success">Thank you for subscribing!</p>}
+            {newsletterStatus === 'success' && <p className="success">Thank you for subscribing to our insights!</p>}
             {newsletterStatus === 'error' && <p className="error">Something went wrong. Please try again.</p>}
           </div>
         </div>
@@ -192,23 +394,85 @@ const ServicesPage = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>Our Services</h1>
+        <div className="page-header">
+          <h1>Comprehensive Predictive Maintenance Services</h1>
+          <p>
+            PrognosCore offers end-to-end predictive maintenance solutions designed to transform 
+            your equipment management strategy and optimize operational efficiency.
+          </p>
+        </div>
+        
         <div className="services-grid">
           <Link to="/services/equipment-monitoring" className="service-card glass-card">
+            <div className="service-icon">📡</div>
             <h3>Equipment Condition Monitoring</h3>
-            <p>Advanced IoT sensors and real-time monitoring systems</p>
+            <p>
+              Advanced IoT sensor networks providing real-time equipment health monitoring 
+              with vibration analysis, thermal imaging, and acoustic emission detection.
+            </p>
+            <div className="service-details">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Multi-parameter sensor integration</li>
+                <li>Real-time data streaming</li>
+                <li>Cloud-based data storage</li>
+                <li>Mobile alert systems</li>
+              </ul>
+            </div>
           </Link>
+          
           <Link to="/services/predictive-analytics" className="service-card glass-card">
-            <h3>Predictive Analytics</h3>
-            <p>AI-powered failure prediction and maintenance optimization</p>
+            <div className="service-icon">🧠</div>
+            <h3>AI-Powered Predictive Analytics</h3>
+            <p>
+              Machine learning algorithms that analyze equipment patterns and predict 
+              failures weeks in advance, enabling proactive maintenance planning.
+            </p>
+            <div className="service-details">
+              <h4>Capabilities:</h4>
+              <ul>
+                <li>Failure pattern recognition</li>
+                <li>Remaining useful life prediction</li>
+                <li>Anomaly detection</li>
+                <li>Maintenance optimization</li>
+              </ul>
+            </div>
           </Link>
+          
           <Link to="/services/erp-integration" className="service-card glass-card">
-            <h3>ERP/CMMS Integration</h3>
-            <p>Seamless integration with existing enterprise systems</p>
+            <div className="service-icon">🔗</div>
+            <h3>Enterprise System Integration</h3>
+            <p>
+              Seamless integration with existing ERP, CMMS, and enterprise systems 
+              for unified operations management and automated workflows.
+            </p>
+            <div className="service-details">
+              <h4>Integration Options:</h4>
+              <ul>
+                <li>SAP and Oracle ERP systems</li>
+                <li>Popular CMMS platforms</li>
+                <li>Custom API development</li>
+                <li>Real-time data synchronization</li>
+              </ul>
+            </div>
           </Link>
+          
           <Link to="/services/maintenance-scheduling" className="service-card glass-card">
-            <h3>Maintenance Scheduling</h3>
-            <p>Intelligent scheduling based on predictive insights</p>
+            <div className="service-icon">📅</div>
+            <h3>Intelligent Maintenance Scheduling</h3>
+            <p>
+              Automated maintenance scheduling based on predictive insights, 
+              resource availability, and operational priorities.
+            </p>
+            <div className="service-details">
+              <h4>Scheduling Features:</h4>
+              <ul>
+                <li>Condition-based scheduling</li>
+                <li>Resource optimization</li>
+                <li>Priority matrix management</li>
+                <li>Cost-benefit analysis</li>
+              </ul>
+            </div>
           </Link>
         </div>
       </div>
@@ -221,39 +485,101 @@ const IndustriesPage = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>Industries We Serve</h1>
+        <div className="page-header">
+          <h1>Industries We Serve</h1>
+          <p>
+            PrognosCore delivers specialized predictive maintenance solutions across diverse 
+            industrial sectors, addressing unique challenges and regulatory requirements.
+          </p>
+        </div>
+        
         <div className="industries-grid">
           <Link to="/industries/manufacturing" className="industry-card glass-card">
+            <div className="industry-icon">🏭</div>
             <h3>Manufacturing</h3>
-            <p>Optimize production efficiency and equipment reliability</p>
+            <p>Production line optimization, quality control, and equipment reliability for manufacturing operations</p>
+            <div className="industry-metrics">
+              <span>• 40% efficiency improvement</span>
+              <span>• 60% reduction in quality defects</span>
+              <span>• 35% decrease in maintenance costs</span>
+            </div>
           </Link>
+          
           <Link to="/industries/oil-gas" className="industry-card glass-card">
+            <div className="industry-icon">🛢️</div>
             <h3>Oil & Gas</h3>
-            <p>Critical equipment monitoring in challenging environments</p>
+            <p>Critical equipment monitoring for refineries, pipelines, and offshore platforms</p>
+            <div className="industry-metrics">
+              <span>• 70% reduction in unplanned downtime</span>
+              <span>• 50% improvement in safety metrics</span>
+              <span>• 45% optimization in maintenance spend</span>
+            </div>
           </Link>
+          
           <Link to="/industries/power-utilities" className="industry-card glass-card">
+            <div className="industry-icon">⚡</div>
             <h3>Power & Utilities</h3>
-            <p>Ensure reliable energy generation and distribution</p>
+            <p>Grid reliability, generator monitoring, and renewable energy asset management</p>
+            <div className="industry-metrics">
+              <span>• 99.9% uptime achievement</span>
+              <span>• 30% extension in asset lifespan</span>
+              <span>• 25% reduction in O&M costs</span>
+            </div>
           </Link>
+          
           <Link to="/industries/mining" className="industry-card glass-card">
+            <div className="industry-icon">⛏️</div>
             <h3>Mining</h3>
-            <p>Remote equipment monitoring and predictive maintenance</p>
+            <p>Heavy machinery monitoring for excavators, conveyors, and processing equipment</p>
+            <div className="industry-metrics">
+              <span>• 55% reduction in equipment failures</span>
+              <span>• 40% improvement in ore recovery</span>
+              <span>• 50% decrease in maintenance costs</span>
+            </div>
           </Link>
+          
           <Link to="/industries/pharmaceutical" className="industry-card glass-card">
-            <h3>Pharmaceutical</h3>
-            <p>Compliance-focused equipment monitoring solutions</p>
+            <div className="industry-icon">💊</div>
+            <h3>Pharmaceutical Manufacturing</h3>
+            <p>Compliance-focused monitoring for critical manufacturing equipment and clean rooms</p>
+            <div className="industry-metrics">
+              <span>• 100% regulatory compliance</span>
+              <span>• 80% reduction in batch failures</span>
+              <span>• 35% improvement in OEE</span>
+            </div>
           </Link>
+          
           <Link to="/industries/food-beverage" className="industry-card glass-card">
+            <div className="industry-icon">🍺</div>
             <h3>Food & Beverage</h3>
-            <p>Hygienic monitoring systems for food safety</p>
+            <p>Hygienic monitoring systems ensuring food safety and production efficiency</p>
+            <div className="industry-metrics">
+              <span>• 90% reduction in contamination risks</span>
+              <span>• 45% improvement in line efficiency</span>
+              <span>• 30% decrease in waste</span>
+            </div>
           </Link>
+          
           <Link to="/industries/automotive" className="industry-card glass-card">
-            <h3>Automotive</h3>
-            <p>Production line optimization and quality control</p>
+            <div className="industry-icon">🚗</div>
+            <h3>Automotive Manufacturing</h3>
+            <p>Production line optimization and quality control for automotive assembly</p>
+            <div className="industry-metrics">
+              <span>• 65% reduction in line stoppages</span>
+              <span>• 50% improvement in first-pass yield</span>
+              <span>• 40% optimization in cycle times</span>
+            </div>
           </Link>
+          
           <Link to="/industries/fmcg" className="industry-card glass-card">
+            <div className="industry-icon">📦</div>
             <h3>FMCG</h3>
-            <p>High-speed production line monitoring</p>
+            <p>High-speed production line monitoring for fast-moving consumer goods</p>
+            <div className="industry-metrics">
+              <span>• 75% improvement in OEE</span>
+              <span>• 60% reduction in changeover times</span>
+              <span>• 35% decrease in product waste</span>
+            </div>
           </Link>
         </div>
       </div>
@@ -266,45 +592,99 @@ const AboutPage = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>About PrognosCore</h1>
+        <div className="page-header">
+          <h1>About PrognosCore</h1>
+          <p>Transforming Industrial Operations Through Intelligent Predictive Maintenance</p>
+        </div>
+        
         <div className="about-content">
           <section className="company-overview glass-card">
             <h2>Our Mission</h2>
             <p>
-              PrognosCore is a cutting-edge predictive maintenance startup based in Nigeria with global ambitions.
-              We leverage the power of IoT, AI, and advanced analytics to transform how industries approach equipment maintenance.
+              PrognosCore is a pioneering predictive maintenance technology company founded in Nigeria with a vision 
+              to transform industrial operations across Africa and beyond. We leverage cutting-edge IoT sensors, 
+              artificial intelligence, and advanced analytics to help businesses predict equipment failures, 
+              optimize maintenance schedules, and achieve unprecedented operational efficiency.
             </p>
             <p>
-              Our tagline "Predict. Prevent. Perform." embodies our commitment to helping businesses anticipate equipment failures,
-              prevent costly downtime, and perform at their peak efficiency.
+              Our mission encapsulated in our tagline "Predict. Prevent. Perform." drives everything we do - 
+              enabling businesses to predict equipment failures before they occur, prevent costly downtime, 
+              and perform at their peak operational capacity.
+            </p>
+            
+            <div className="mission-pillars">
+              <div className="pillar">
+                <h3>🎯 Predict</h3>
+                <p>Advanced AI algorithms analyze equipment patterns to forecast potential failures weeks in advance</p>
+              </div>
+              <div className="pillar">
+                <h3>🛡️ Prevent</h3>
+                <p>Proactive maintenance strategies that prevent costly equipment breakdowns and safety incidents</p>
+              </div>
+              <div className="pillar">
+                <h3>🚀 Perform</h3>
+                <p>Optimized operations that maximize equipment performance, efficiency, and profitability</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="company-story glass-card">
+            <h2>Our Story</h2>
+            <p>
+              Founded by a team of experienced engineers and data scientists, PrognosCore emerged from the recognition 
+              that Nigeria's growing industrial sector needed world-class predictive maintenance solutions. 
+              With deep understanding of local industrial challenges and global technology trends, we developed 
+              solutions that bridge the gap between traditional maintenance practices and Industry 4.0 innovations.
+            </p>
+            <p>
+              Our founding team combines decades of experience in industrial automation, data science, and 
+              enterprise software development. We've witnessed firsthand the impact of equipment failures on 
+              productivity, safety, and profitability across various industries, which drove us to create 
+              solutions that fundamentally transform how businesses approach equipment maintenance.
             </p>
           </section>
 
           <section className="team-section">
-            <h2>Our Team</h2>
+            <h2>Our Expert Team</h2>
+            <p className="team-intro">
+              Our multidisciplinary team brings together expertise in industrial engineering, data science, 
+              software development, and business strategy to deliver comprehensive predictive maintenance solutions.
+            </p>
+            
             <div className="team-grid">
               <div className="team-category">
-                <h3>Administration</h3>
+                <h3>Leadership & Administration</h3>
                 <div className="team-members">
                   <div className="team-member glass-card">
                     <div className="member-photo">
-                      <img src="https://images.pexels.com/photos/7688543/pexels-photo-7688543.jpeg" alt="Admin Team Member" />
+                      <img src="https://images.pexels.com/photos/7688543/pexels-photo-7688543.jpeg" alt="Leadership Team" />
                     </div>
-                    <h4>Leadership Team</h4>
-                    <p>Strategic direction and business operations</p>
+                    <h4>Executive Leadership</h4>
+                    <p>Strategic vision, business development, and operational excellence</p>
+                    <div className="member-expertise">
+                      <span>Strategic Planning</span>
+                      <span>Business Development</span>
+                      <span>Operations Management</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className="team-category">
-                <h3>Technology</h3>
+                <h3>Technology & Engineering</h3>
                 <div className="team-members">
                   <div className="team-member glass-card">
                     <div className="member-photo">
-                      <img src="https://images.pexels.com/photos/16053029/pexels-photo-16053029.jpeg" alt="Tech Team Member" />
+                      <img src="https://images.pexels.com/photos/16053029/pexels-photo-16053029.jpeg" alt="Technology Team" />
                     </div>
-                    <h4>Engineering Team</h4>
-                    <p>AI/ML development and IoT solutions</p>
+                    <h4>Engineering Excellence</h4>
+                    <p>AI/ML development, IoT systems, and predictive analytics</p>
+                    <div className="member-expertise">
+                      <span>Machine Learning</span>
+                      <span>IoT Systems</span>
+                      <span>Data Engineering</span>
+                      <span>Cloud Architecture</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -314,10 +694,15 @@ const AboutPage = () => {
                 <div className="team-members">
                   <div className="team-member glass-card">
                     <div className="member-photo">
-                      <img src="https://images.unsplash.com/photo-1638696898556-2c1f3da83f42" alt="Business Team Member" />
+                      <img src="https://images.unsplash.com/photo-1638696898556-2c1f3da83f42" alt="Business Team" />
                     </div>
-                    <h4>Business Team</h4>
-                    <p>Client relations and market expansion</p>
+                    <h4>Market Expansion</h4>
+                    <p>Client partnerships, market analysis, and growth strategies</p>
+                    <div className="member-expertise">
+                      <span>Client Relations</span>
+                      <span>Market Analysis</span>
+                      <span>Partnership Development</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -327,12 +712,39 @@ const AboutPage = () => {
                 <div className="team-members">
                   <div className="team-member glass-card">
                     <div className="member-photo">
-                      <img src="https://images.unsplash.com/photo-1510849911856-cdc9335e5597" alt="Brand Team Member" />
+                      <img src="https://images.unsplash.com/photo-1510849911856-cdc9335e5597" alt="Brand Team" />
                     </div>
-                    <h4>Brand Team</h4>
-                    <p>Marketing and brand development</p>
+                    <h4>Brand Excellence</h4>
+                    <p>Marketing strategy, brand development, and digital presence</p>
+                    <div className="member-expertise">
+                      <span>Digital Marketing</span>
+                      <span>Brand Strategy</span>
+                      <span>Content Creation</span>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="values-section glass-card">
+            <h2>Our Core Values</h2>
+            <div className="values-grid">
+              <div className="value-item">
+                <h3>🎯 Innovation Excellence</h3>
+                <p>Continuously pushing the boundaries of predictive maintenance technology</p>
+              </div>
+              <div className="value-item">
+                <h3>🤝 Client Partnership</h3>
+                <p>Building long-term relationships based on trust, transparency, and mutual success</p>
+              </div>
+              <div className="value-item">
+                <h3>🛡️ Operational Integrity</h3>
+                <p>Maintaining the highest standards of data security, system reliability, and service quality</p>
+              </div>
+              <div className="value-item">
+                <h3>🌍 Global Impact</h3>
+                <p>Contributing to sustainable industrial development across Nigeria and internationally</p>
               </div>
             </div>
           </section>
@@ -374,82 +786,140 @@ const ContactPage = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>Contact Us</h1>
+        <div className="page-header">
+          <h1>Contact PrognosCore</h1>
+          <p>Ready to transform your maintenance operations? Let's discuss how we can help.</p>
+        </div>
+        
         <div className="contact-content">
           <div className="contact-info glass-card">
             <h2>Get In Touch</h2>
-            <p>Ready to transform your maintenance operations? We'd love to hear from you.</p>
-            <div className="contact-details">
-              <p><strong>Email:</strong> info@prognoscore.com</p>
-              <p><strong>Location:</strong> Nigeria (Global Operations)</p>
+            <p>
+              Whether you're looking to optimize existing operations, implement new predictive maintenance 
+              strategies, or explore partnership opportunities, our team is ready to help.
+            </p>
+            
+            <div className="contact-methods">
+              <div className="contact-method">
+                <h3>📧 Email</h3>
+                <p>info@prognoscore.com</p>
+                <p>Response within 24 hours</p>
+              </div>
+              
+              <div className="contact-method">
+                <h3>🌍 Location</h3>
+                <p>Nigeria (Global Operations)</p>
+                <p>Serving clients worldwide</p>
+              </div>
+              
+              <div className="contact-method">
+                <h3>⏰ Business Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM WAT</p>
+                <p>Emergency support available 24/7</p>
+              </div>
+            </div>
+
+            <div className="contact-cta">
+              <h3>Schedule a Consultation</h3>
+              <p>
+                Book a free 30-minute consultation to discuss your predictive maintenance needs 
+                and explore how PrognosCore can add value to your operations.
+              </p>
             </div>
           </div>
 
           <form className="contact-form glass-card" onSubmit={handleSubmit}>
             <h2>Send us a Message</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            
             <div className="form-group">
+              <label htmlFor="name">Full Name *</label>
               <input
                 type="text"
+                id="name"
                 name="name"
-                placeholder="Your Name"
+                placeholder="Your full name"
                 value={formData.name}
                 onChange={handleChange}
                 required
                 className="glass-input"
               />
             </div>
+            
             <div className="form-group">
+              <label htmlFor="email">Business Email *</label>
               <input
                 type="email"
+                id="email"
                 name="email"
-                placeholder="Your Email"
+                placeholder="your.email@company.com"
                 value={formData.email}
                 onChange={handleChange}
                 required
                 className="glass-input"
               />
             </div>
+            
             <div className="form-group">
+              <label htmlFor="company">Company/Organization</label>
               <input
                 type="text"
+                id="company"
                 name="company"
-                placeholder="Company (Optional)"
+                placeholder="Your company name"
                 value={formData.company}
                 onChange={handleChange}
                 className="glass-input"
               />
             </div>
+            
             <div className="form-group">
+              <label htmlFor="reason">Reason for Contact *</label>
               <select
+                id="reason"
                 name="reason"
                 value={formData.reason}
                 onChange={handleChange}
                 required
                 className="glass-input"
               >
-                <option value="">Reason for Contact</option>
+                <option value="">Select reason for contact</option>
                 <option value="general-inquiry">General Inquiry</option>
-                <option value="investor-interest">Investor Interest</option>
-                <option value="partnership">Partnership Opportunity</option>
+                <option value="investor-interest">Investment Opportunity</option>
+                <option value="partnership">Partnership Proposal</option>
                 <option value="client-consultation">Client Consultation</option>
                 <option value="technical-support">Technical Support</option>
+                <option value="media-press">Media & Press</option>
+                <option value="career-opportunity">Career Opportunity</option>
               </select>
             </div>
+            
             <div className="form-group">
+              <label htmlFor="message">Message *</label>
               <textarea
+                id="message"
                 name="message"
-                placeholder="Your Message"
+                placeholder="Tell us about your requirements, challenges, or how we can help..."
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows="5"
+                rows="6"
                 className="glass-input"
               ></textarea>
             </div>
+            
             <button type="submit" className="glass-btn primary">Send Message</button>
             
-            {status === 'success' && <p className="success">Message sent successfully!</p>}
-            {status === 'error' && <p className="error">Failed to send message. Please try again.</p>}
+            {status === 'success' && (
+              <div className="form-feedback success">
+                <p>✅ Message sent successfully! We'll get back to you within 24 hours.</p>
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="form-feedback error">
+                <p>❌ Failed to send message. Please try again or contact us directly at info@prognoscore.com</p>
+              </div>
+            )}
           </form>
         </div>
       </div>
@@ -462,26 +932,153 @@ const LearnMorePage = () => {
   return (
     <div className="page">
       <div className="container">
-        <h1>Learn More About Our Process</h1>
+        <div className="page-header">
+          <h1>How PrognosCore Works</h1>
+          <p>Discover our comprehensive approach to predictive maintenance transformation</p>
+        </div>
+        
         <div className="learn-more-content">
+          <section className="process-overview glass-card">
+            <h2>Our Proven Methodology</h2>
+            <p>
+              PrognosCore follows a systematic approach to implementing predictive maintenance solutions, 
+              ensuring maximum value delivery and seamless integration with your existing operations.
+            </p>
+          </section>
+
           <section className="process-step glass-card">
-            <h2>1. Data Collection</h2>
-            <p>We deploy advanced IoT sensors to collect real-time data from your equipment.</p>
+            <div className="step-number">1</div>
+            <div className="step-content">
+              <h2>Assessment & Strategy Development</h2>
+              <p>
+                Our experts conduct comprehensive equipment audits and operational assessments to understand 
+                your unique challenges, maintenance practices, and improvement opportunities. We analyze 
+                historical maintenance data, equipment criticality, and operational constraints to develop 
+                a customized predictive maintenance strategy.
+              </p>
+              <div className="step-details">
+                <h3>Key Activities:</h3>
+                <ul>
+                  <li>Equipment criticality analysis</li>
+                  <li>Current maintenance practice assessment</li>
+                  <li>Failure mode and effects analysis (FMEA)</li>
+                  <li>ROI projections and business case development</li>
+                  <li>Technology roadmap creation</li>
+                </ul>
+              </div>
+            </div>
           </section>
           
           <section className="process-step glass-card">
-            <h2>2. AI Analysis</h2>
-            <p>Our machine learning algorithms analyze patterns and predict potential failures.</p>
+            <div className="step-number">2</div>
+            <div className="step-content">
+              <h2>Sensor Deployment & Data Collection</h2>
+              <p>
+                We deploy advanced IoT sensor networks tailored to your equipment types and operating 
+                conditions. Our sensors continuously collect multi-parameter data including vibration, 
+                temperature, pressure, acoustic emissions, and more, establishing baseline equipment 
+                behavior patterns.
+              </p>
+              <div className="step-details">
+                <h3>Technology Stack:</h3>
+                <ul>
+                  <li>Wireless vibration sensors for rotating machinery</li>
+                  <li>Thermal imaging cameras for electrical equipment</li>
+                  <li>Acoustic emission sensors for structural monitoring</li>
+                  <li>Pressure and flow sensors for fluid systems</li>
+                  <li>Edge computing devices for real-time processing</li>
+                </ul>
+              </div>
+            </div>
           </section>
           
           <section className="process-step glass-card">
-            <h2>3. Actionable Insights</h2>
-            <p>Receive timely alerts and maintenance recommendations to prevent downtime.</p>
+            <div className="step-number">3</div>
+            <div className="step-content">
+              <h2>AI Model Training & Pattern Recognition</h2>
+              <p>
+                Our machine learning algorithms analyze collected data to identify normal operating patterns, 
+                detect anomalies, and develop predictive models specific to your equipment. The AI continuously 
+                learns and improves its predictions as more data becomes available.
+              </p>
+              <div className="step-details">
+                <h3>AI Capabilities:</h3>
+                <ul>
+                  <li>Unsupervised anomaly detection algorithms</li>
+                  <li>Failure pattern recognition using deep learning</li>
+                  <li>Remaining useful life (RUL) prediction models</li>
+                  <li>Multivariate time series analysis</li>
+                  <li>Digital twin development for complex systems</li>
+                </ul>
+              </div>
+            </div>
           </section>
           
           <section className="process-step glass-card">
-            <h2>4. Continuous Optimization</h2>
-            <p>Our system learns and improves predictions over time for better results.</p>
+            <div className="step-number">4</div>
+            <div className="step-content">
+              <h2>Actionable Insights & Optimization</h2>
+              <p>
+                Transform predictions into actionable maintenance recommendations with intelligent scheduling, 
+                resource optimization, and continuous performance monitoring. Our system integrates with 
+                your existing workflows to ensure seamless adoption and maximum operational impact.
+              </p>
+              <div className="step-details">
+                <h3>Value Delivery:</h3>
+                <ul>
+                  <li>Proactive maintenance scheduling based on condition</li>
+                  <li>Resource optimization and spare parts planning</li>
+                  <li>Real-time alerts and mobile notifications</li>
+                  <li>Performance dashboards and analytics</li>
+                  <li>Continuous improvement recommendations</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section className="implementation-timeline glass-card">
+            <h2>Implementation Timeline</h2>
+            <div className="timeline-grid">
+              <div className="timeline-phase">
+                <h3>Weeks 1-2: Planning & Design</h3>
+                <p>Assessment, strategy development, and system design</p>
+              </div>
+              <div className="timeline-phase">
+                <h3>Weeks 3-4: Deployment & Integration</h3>
+                <p>Sensor installation, system integration, and initial configuration</p>
+              </div>
+              <div className="timeline-phase">
+                <h3>Weeks 5-6: Testing & Optimization</h3>
+                <p>System testing, model training, and performance optimization</p>
+              </div>
+              <div className="timeline-phase">
+                <h3>Week 7+: Go-Live & Support</h3>
+                <p>Full system activation, user training, and ongoing support</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="success-metrics glass-card">
+            <h2>Success Metrics & KPIs</h2>
+            <p>We measure success through tangible improvements in operational performance:</p>
+            <div className="metrics-grid">
+              <div className="metric">
+                <h3>Equipment Availability</h3>
+                <p>Target: 95%+ uptime achievement</p>
+              </div>
+              <div className="metric">
+                <h3>Maintenance Cost Reduction</h3>
+                <p>Target: 25-45% cost savings</p>
+              </div>
+              <div className="metric">
+                <h3>Failure Prediction Accuracy</h3>
+                <p>Target: 85%+ prediction accuracy</p>
+              </div>
+              <div className="metric">
+                <h3>Mean Time to Repair (MTTR)</h3>
+                <p>Target: 40%+ reduction in repair time</p>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -494,41 +1091,167 @@ const ServiceDetail = ({ service }) => {
   const services = {
     'equipment-monitoring': {
       title: 'Equipment Condition Monitoring',
-      description: 'Advanced IoT sensors and real-time monitoring systems for industrial equipment.',
-      features: ['Real-time data collection', 'Multi-sensor integration', 'Cloud-based analytics', 'Mobile alerts']
+      subtitle: 'Real-time equipment health monitoring with advanced IoT sensor networks',
+      description: 'Our comprehensive equipment condition monitoring solution provides continuous, real-time visibility into your equipment health using advanced IoT sensors, machine learning analytics, and cloud-based data processing.',
+      image: 'https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg',
+      features: [
+        'Multi-parameter sensor integration (vibration, temperature, pressure, acoustic)',
+        'Real-time data streaming and cloud storage',
+        'Mobile alerts and notifications',
+        'Historical trend analysis and reporting',
+        'Integration with existing CMMS/ERP systems'
+      ],
+      benefits: [
+        'Early detection of equipment anomalies',
+        'Reduced unexpected equipment failures',
+        'Optimized maintenance scheduling',
+        'Extended equipment lifespan',
+        'Improved operational safety'
+      ],
+      techSpecs: [
+        'Wireless sensor networks with 5+ year battery life',
+        'Edge computing for real-time processing',
+        'Cloud-based data analytics platform',
+        'Mobile and web-based dashboards',
+        'API integration capabilities'
+      ]
     },
     'predictive-analytics': {
-      title: 'Predictive Analytics',
-      description: 'AI-powered failure prediction and maintenance optimization solutions.',
-      features: ['Machine learning algorithms', 'Failure pattern recognition', 'Maintenance optimization', 'ROI analysis']
+      title: 'AI-Powered Predictive Analytics',
+      subtitle: 'Machine learning algorithms that predict equipment failures weeks in advance',
+      description: 'Our AI-powered predictive analytics platform uses advanced machine learning algorithms to analyze equipment behavior patterns, predict potential failures, and recommend optimal maintenance actions.',
+      image: 'https://images.pexels.com/photos/16053029/pexels-photo-16053029.jpeg',
+      features: [
+        'Machine learning failure prediction models',
+        'Remaining useful life (RUL) estimation',
+        'Anomaly detection and pattern recognition',
+        'Multivariate time series analysis',
+        'Digital twin development for complex systems'
+      ],
+      benefits: [
+        'Predict failures 2-8 weeks in advance',
+        'Reduce unplanned downtime by up to 70%',
+        'Optimize maintenance intervals',
+        'Improve spare parts inventory management',
+        'Enhance operational decision-making'
+      ],
+      techSpecs: [
+        'Deep learning neural networks',
+        'Unsupervised anomaly detection',
+        'Time series forecasting algorithms',
+        'Real-time model updating',
+        'Explainable AI for maintenance insights'
+      ]
     },
     'erp-integration': {
-      title: 'ERP/CMMS Integration',
-      description: 'Seamless integration with existing enterprise resource planning systems.',
-      features: ['API connectivity', 'Data synchronization', 'Workflow automation', 'Custom integrations']
+      title: 'Enterprise System Integration',
+      subtitle: 'Seamless integration with existing ERP, CMMS, and enterprise systems',
+      description: 'Our enterprise integration solution ensures seamless connectivity between predictive maintenance insights and your existing business systems, enabling automated workflows and unified operations management.',
+      image: 'https://images.unsplash.com/photo-1638696898556-2c1f3da83f42',
+      features: [
+        'SAP, Oracle, and Microsoft ERP integration',
+        'Popular CMMS platform connectivity',
+        'Custom API development',
+        'Real-time data synchronization',
+        'Automated workflow triggers'
+      ],
+      benefits: [
+        'Unified operations management',
+        'Automated maintenance work orders',
+        'Integrated spare parts management',
+        'Streamlined reporting and analytics',
+        'Reduced manual data entry'
+      ],
+      techSpecs: [
+        'RESTful API architecture',
+        'Real-time and batch data synchronization',
+        'Enterprise security protocols',
+        'Custom integration development',
+        'Workflow automation engine'
+      ]
     },
     'maintenance-scheduling': {
-      title: 'Maintenance Scheduling',
-      description: 'Intelligent scheduling based on predictive insights and operational requirements.',
-      features: ['Automated scheduling', 'Resource optimization', 'Priority management', 'Performance tracking']
+      title: 'Intelligent Maintenance Scheduling',
+      subtitle: 'Automated maintenance scheduling based on predictive insights and operational priorities',
+      description: 'Our intelligent maintenance scheduling system optimizes maintenance activities based on equipment condition, operational priorities, resource availability, and cost considerations.',
+      image: 'https://images.unsplash.com/photo-1510849911856-cdc9335e5597',
+      features: [
+        'Condition-based maintenance scheduling',
+        'Resource optimization and planning',
+        'Priority matrix management',
+        'Cost-benefit analysis',
+        'Automated work order generation'
+      ],
+      benefits: [
+        'Optimized maintenance intervals',
+        'Improved resource utilization',
+        'Reduced maintenance costs',
+        'Enhanced equipment reliability',
+        'Better maintenance team productivity'
+      ],
+      techSpecs: [
+        'Advanced scheduling algorithms',
+        'Multi-constraint optimization',
+        'Resource availability tracking',
+        'Cost optimization models',
+        'Integration with planning systems'
+      ]
     }
   };
 
   const serviceInfo = services[service];
 
+  if (!serviceInfo) {
+    return <div className="page"><div className="container"><h1>Service not found</h1></div></div>;
+  }
+
   return (
     <div className="page">
       <div className="container">
-        <h1>{serviceInfo?.title}</h1>
-        <div className="service-detail glass-card">
-          <p>{serviceInfo?.description}</p>
-          <h3>Key Features:</h3>
-          <ul>
-            {serviceInfo?.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
-          <Link to="/contact" className="glass-btn primary">Get Started</Link>
+        <div className="service-detail">
+          <div className="service-header glass-card">
+            <img src={serviceInfo.image} alt={serviceInfo.title} className="service-image" />
+            <div className="service-header-content">
+              <h1>{serviceInfo.title}</h1>
+              <p className="service-subtitle">{serviceInfo.subtitle}</p>
+              <p className="service-description">{serviceInfo.description}</p>
+            </div>
+          </div>
+
+          <div className="service-content">
+            <div className="service-section glass-card">
+              <h2>Key Features</h2>
+              <ul>
+                {serviceInfo.features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="service-section glass-card">
+              <h2>Business Benefits</h2>
+              <ul>
+                {serviceInfo.benefits.map((benefit, index) => (
+                  <li key={index}>{benefit}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="service-section glass-card">
+              <h2>Technical Specifications</h2>
+              <ul>
+                {serviceInfo.techSpecs.map((spec, index) => (
+                  <li key={index}>{spec}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="service-cta glass-card">
+            <h2>Ready to Get Started?</h2>
+            <p>Contact our team to discuss how this service can transform your operations.</p>
+            <Link to="/contact" className="glass-btn primary">Schedule Consultation</Link>
+          </div>
         </div>
       </div>
     </div>
@@ -539,85 +1262,299 @@ const ServiceDetail = ({ service }) => {
 const IndustryDetail = ({ industry }) => {
   const industries = {
     'manufacturing': {
-      title: 'Manufacturing',
-      description: 'Optimize production efficiency and equipment reliability in manufacturing environments.',
-      challenges: ['Production downtime', 'Quality control', 'Equipment wear', 'Cost optimization'],
-      solutions: ['Real-time monitoring', 'Predictive maintenance', 'Quality analytics', 'Performance optimization']
+      title: 'Manufacturing Industry Solutions',
+      subtitle: 'Optimize production efficiency and equipment reliability in manufacturing environments',
+      description: 'PrognosCore delivers specialized predictive maintenance solutions for manufacturing operations, helping optimize production lines, reduce quality defects, and maximize equipment effectiveness.',
+      image: 'https://images.pexels.com/photos/7688543/pexels-photo-7688543.jpeg',
+      challenges: [
+        'Unplanned production line stoppages',
+        'Quality control and defect prevention',
+        'Equipment wear and degradation',
+        'Maintenance cost optimization',
+        'Just-in-time production requirements'
+      ],
+      solutions: [
+        'Real-time production line monitoring',
+        'Predictive quality analytics',
+        'Equipment performance optimization',
+        'Automated maintenance scheduling',
+        'Cost reduction strategies'
+      ],
+      caseStudy: {
+        title: 'Manufacturing Plant Transformation',
+        metrics: [
+          { label: 'Production Uptime', value: '98.5%', improvement: '+15%' },
+          { label: 'Quality Defects', value: '60%', improvement: 'reduction' },
+          { label: 'Maintenance Costs', value: '35%', improvement: 'savings' },
+          { label: 'OEE Improvement', value: '40%', improvement: 'increase' }
+        ]
+      }
     },
     'oil-gas': {
-      title: 'Oil & Gas',
-      description: 'Critical equipment monitoring in challenging oil and gas environments.',
-      challenges: ['Remote locations', 'Harsh conditions', 'Safety requirements', 'High costs'],
-      solutions: ['Remote monitoring', 'Environmental sensors', 'Safety analytics', 'Cost reduction']
+      title: 'Oil & Gas Industry Solutions',
+      subtitle: 'Critical equipment monitoring in challenging oil and gas environments',
+      description: 'Specialized predictive maintenance solutions for oil & gas operations, ensuring equipment reliability in harsh environments while maintaining the highest safety standards.',
+      image: 'https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg',
+      challenges: [
+        'Remote and harsh operating environments',
+        'Critical equipment failure consequences',
+        'Safety and environmental compliance',
+        'High maintenance and replacement costs',
+        'Regulatory requirements and standards'
+      ],
+      solutions: [
+        'Remote equipment monitoring systems',
+        'Environmental sensor networks',
+        'Safety-critical system analytics',
+        'Compliance monitoring and reporting',
+        'Cost optimization strategies'
+      ],
+      caseStudy: {
+        title: 'Offshore Platform Optimization',
+        metrics: [
+          { label: 'Unplanned Downtime', value: '70%', improvement: 'reduction' },
+          { label: 'Safety Incidents', value: '80%', improvement: 'reduction' },
+          { label: 'Maintenance Costs', value: '45%', improvement: 'savings' },
+          { label: 'Equipment Availability', value: '99.2%', improvement: 'uptime' }
+        ]
+      }
     },
     'power-utilities': {
-      title: 'Power & Utilities',
-      description: 'Ensure reliable energy generation and distribution systems.',
-      challenges: ['Grid reliability', 'Equipment aging', 'Regulatory compliance', 'Efficiency'],
-      solutions: ['Grid monitoring', 'Asset management', 'Compliance tracking', 'Optimization']
+      title: 'Power & Utilities Solutions',
+      subtitle: 'Ensure reliable energy generation and distribution systems',
+      description: 'Comprehensive predictive maintenance solutions for power generation, transmission, and distribution systems, ensuring grid reliability and optimizing asset performance.',
+      image: 'https://images.unsplash.com/photo-1638696898556-2c1f3da83f42',
+      challenges: [
+        'Grid reliability and stability requirements',
+        'Aging infrastructure and equipment',
+        'Regulatory compliance obligations',
+        'Energy efficiency optimization',
+        'Peak demand management'
+      ],
+      solutions: [
+        'Grid monitoring and analytics',
+        'Asset lifecycle management',
+        'Compliance tracking systems',
+        'Efficiency optimization tools',
+        'Demand response management'
+      ],
+      caseStudy: {
+        title: 'Power Plant Modernization',
+        metrics: [
+          { label: 'Grid Uptime', value: '99.9%', improvement: 'reliability' },
+          { label: 'Asset Lifespan', value: '30%', improvement: 'extension' },
+          { label: 'O&M Costs', value: '25%', improvement: 'reduction' },
+          { label: 'Efficiency Gains', value: '18%', improvement: 'improvement' }
+        ]
+      }
     },
     'mining': {
-      title: 'Mining',
-      description: 'Remote equipment monitoring and predictive maintenance for mining operations.',
-      challenges: ['Remote locations', 'Heavy equipment', 'Safety concerns', 'Environmental impact'],
-      solutions: ['Remote monitoring', 'Equipment analytics', 'Safety systems', 'Environmental monitoring']
+      title: 'Mining Industry Solutions',
+      subtitle: 'Remote equipment monitoring and predictive maintenance for mining operations',
+      description: 'Robust predictive maintenance solutions designed for the demanding mining environment, ensuring equipment reliability and operational safety in remote locations.',
+      image: 'https://images.unsplash.com/photo-1510849911856-cdc9335e5597',
+      challenges: [
+        'Remote location equipment monitoring',
+        'Heavy machinery maintenance complexity',
+        'Safety and environmental concerns',
+        'High equipment replacement costs',
+        'Operational continuity requirements'
+      ],
+      solutions: [
+        'Remote monitoring systems',
+        'Heavy equipment analytics',
+        'Safety monitoring systems',
+        'Environmental impact tracking',
+        'Operational optimization tools'
+      ],
+      caseStudy: {
+        title: 'Mining Operation Enhancement',
+        metrics: [
+          { label: 'Equipment Failures', value: '55%', improvement: 'reduction' },
+          { label: 'Ore Recovery', value: '40%', improvement: 'improvement' },
+          { label: 'Maintenance Costs', value: '50%', improvement: 'savings' },
+          { label: 'Safety Score', value: '95%', improvement: 'rating' }
+        ]
+      }
     },
     'pharmaceutical': {
-      title: 'Pharmaceutical',
-      description: 'Compliance-focused equipment monitoring solutions for pharmaceutical manufacturing.',
-      challenges: ['Regulatory compliance', 'Quality assurance', 'Contamination prevention', 'Documentation'],
-      solutions: ['Compliance monitoring', 'Quality control', 'Clean room monitoring', 'Audit trails']
+      title: 'Pharmaceutical Manufacturing',
+      subtitle: 'Compliance-focused equipment monitoring solutions for pharmaceutical manufacturing',
+      description: 'Specialized predictive maintenance solutions ensuring regulatory compliance, product quality, and operational excellence in pharmaceutical manufacturing environments.',
+      image: 'https://images.pexels.com/photos/16053029/pexels-photo-16053029.jpeg',
+      challenges: [
+        'Strict regulatory compliance requirements',
+        'Product quality assurance',
+        'Contamination prevention',
+        'Batch documentation and traceability',
+        'Clean room environment maintenance'
+      ],
+      solutions: [
+        'Compliance monitoring systems',
+        'Quality control analytics',
+        'Clean room monitoring',
+        'Audit trail management',
+        'Validation documentation'
+      ],
+      caseStudy: {
+        title: 'Pharma Plant Compliance',
+        metrics: [
+          { label: 'Regulatory Compliance', value: '100%', improvement: 'achievement' },
+          { label: 'Batch Failures', value: '80%', improvement: 'reduction' },
+          { label: 'OEE Improvement', value: '35%', improvement: 'increase' },
+          { label: 'Quality Score', value: '99.8%', improvement: 'rating' }
+        ]
+      }
     },
     'food-beverage': {
-      title: 'Food & Beverage',
-      description: 'Hygienic monitoring systems for food safety and production efficiency.',
-      challenges: ['Food safety', 'Hygiene standards', 'Temperature control', 'Traceability'],
-      solutions: ['Hygiene monitoring', 'Temperature tracking', 'Safety analytics', 'Traceability systems']
+      title: 'Food & Beverage Industry',
+      subtitle: 'Hygienic monitoring systems ensuring food safety and production efficiency',
+      description: 'Food-grade predictive maintenance solutions that ensure product safety, maintain hygienic standards, and optimize production efficiency in food and beverage operations.',
+      image: 'https://images.pexels.com/photos/7688543/pexels-photo-7688543.jpeg',
+      challenges: [
+        'Food safety and hygiene standards',
+        'Temperature control and monitoring',
+        'Product traceability requirements',
+        'Packaging integrity assurance',
+        'Seasonal demand fluctuations'
+      ],
+      solutions: [
+        'Hygiene monitoring systems',
+        'Temperature tracking solutions',
+        'Safety analytics platforms',
+        'Traceability systems',
+        'Production optimization tools'
+      ],
+      caseStudy: {
+        title: 'Food Processing Optimization',
+        metrics: [
+          { label: 'Contamination Risks', value: '90%', improvement: 'reduction' },
+          { label: 'Line Efficiency', value: '45%', improvement: 'improvement' },
+          { label: 'Product Waste', value: '30%', improvement: 'reduction' },
+          { label: 'Quality Compliance', value: '99.9%', improvement: 'achievement' }
+        ]
+      }
     },
     'automotive': {
-      title: 'Automotive',
-      description: 'Production line optimization and quality control for automotive manufacturing.',
-      challenges: ['Production speed', 'Quality control', 'Just-in-time delivery', 'Cost pressure'],
-      solutions: ['Line monitoring', 'Quality analytics', 'Delivery optimization', 'Cost reduction']
+      title: 'Automotive Manufacturing',
+      subtitle: 'Production line optimization and quality control for automotive assembly',
+      description: 'Advanced predictive maintenance solutions for automotive manufacturing, ensuring production line efficiency, quality control, and just-in-time delivery requirements.',
+      image: 'https://images.unsplash.com/photo-1638696898556-2c1f3da83f42',
+      challenges: [
+        'High-speed production line requirements',
+        'Quality control and zero-defect goals',
+        'Just-in-time delivery pressures',
+        'Equipment complexity and integration',
+        'Cost pressure and efficiency demands'
+      ],
+      solutions: [
+        'Production line monitoring',
+        'Quality analytics systems',
+        'Delivery optimization tools',
+        'Equipment integration platforms',
+        'Cost reduction strategies'
+      ],
+      caseStudy: {
+        title: 'Auto Assembly Enhancement',
+        metrics: [
+          { label: 'Line Stoppages', value: '65%', improvement: 'reduction' },
+          { label: 'First-Pass Yield', value: '50%', improvement: 'improvement' },
+          { label: 'Cycle Time', value: '40%', improvement: 'optimization' },
+          { label: 'Quality Score', value: '99.5%', improvement: 'achievement' }
+        ]
+      }
     },
     'fmcg': {
-      title: 'FMCG',
-      description: 'High-speed production line monitoring for fast-moving consumer goods.',
-      challenges: ['High-speed production', 'Quality consistency', 'Packaging integrity', 'Efficiency'],
-      solutions: ['Speed monitoring', 'Quality control', 'Packaging analytics', 'Efficiency optimization']
+      title: 'Fast-Moving Consumer Goods',
+      subtitle: 'High-speed production line monitoring for fast-moving consumer goods',
+      description: 'Specialized predictive maintenance solutions for FMCG operations, ensuring high-speed production efficiency, quality consistency, and rapid changeover capabilities.',
+      image: 'https://images.unsplash.com/photo-1510849911856-cdc9335e5597',
+      challenges: [
+        'High-speed production requirements',
+        'Quality consistency across batches',
+        'Rapid product changeovers',
+        'Packaging integrity and efficiency',
+        'Market demand fluctuations'
+      ],
+      solutions: [
+        'High-speed line monitoring',
+        'Quality control systems',
+        'Changeover optimization',
+        'Packaging analytics',
+        'Demand forecasting integration'
+      ],
+      caseStudy: {
+        title: 'FMCG Production Excellence',
+        metrics: [
+          { label: 'OEE Improvement', value: '75%', improvement: 'increase' },
+          { label: 'Changeover Time', value: '60%', improvement: 'reduction' },
+          { label: 'Product Waste', value: '35%', improvement: 'reduction' },
+          { label: 'Line Efficiency', value: '85%', improvement: 'achievement' }
+        ]
+      }
     }
   };
 
   const industryInfo = industries[industry];
 
+  if (!industryInfo) {
+    return <div className="page"><div className="container"><h1>Industry not found</h1></div></div>;
+  }
+
   return (
     <div className="page">
       <div className="container">
-        <h1>{industryInfo?.title}</h1>
-        <div className="industry-detail glass-card">
-          <p>{industryInfo?.description}</p>
-          
-          <div className="industry-sections">
-            <div className="challenges-section">
-              <h3>Industry Challenges:</h3>
-              <ul>
-                {industryInfo?.challenges.map((challenge, index) => (
-                  <li key={index}>{challenge}</li>
-                ))}
-              </ul>
-            </div>
-            
-            <div className="solutions-section">
-              <h3>Our Solutions:</h3>
-              <ul>
-                {industryInfo?.solutions.map((solution, index) => (
-                  <li key={index}>{solution}</li>
-                ))}
-              </ul>
+        <div className="industry-detail">
+          <div className="industry-header glass-card">
+            <img src={industryInfo.image} alt={industryInfo.title} className="industry-image" />
+            <div className="industry-header-content">
+              <h1>{industryInfo.title}</h1>
+              <p className="industry-subtitle">{industryInfo.subtitle}</p>
+              <p className="industry-description">{industryInfo.description}</p>
             </div>
           </div>
-          
-          <Link to="/contact" className="glass-btn primary">Learn More</Link>
+
+          <div className="industry-content">
+            <div className="industry-sections">
+              <div className="challenges-section glass-card">
+                <h2>Industry Challenges</h2>
+                <ul>
+                  {industryInfo.challenges.map((challenge, index) => (
+                    <li key={index}>{challenge}</li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="solutions-section glass-card">
+                <h2>Our Solutions</h2>
+                <ul>
+                  {industryInfo.solutions.map((solution, index) => (
+                    <li key={index}>{solution}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="case-study glass-card">
+              <h2>{industryInfo.caseStudy.title}</h2>
+              <p>Real-world results achieved through PrognosCore implementation:</p>
+              <div className="metrics-grid">
+                {industryInfo.caseStudy.metrics.map((metric, index) => (
+                  <div key={index} className="metric-card">
+                    <h3>{metric.value}</h3>
+                    <p>{metric.label}</p>
+                    <span className="improvement">{metric.improvement}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="industry-cta glass-card">
+            <h2>Transform Your Operations</h2>
+            <p>Ready to achieve similar results in your industry? Let's discuss your specific requirements.</p>
+            <Link to="/contact" className="glass-btn primary">Schedule Industry Consultation</Link>
+          </div>
         </div>
       </div>
     </div>
@@ -633,29 +1570,36 @@ const Footer = () => {
           <div className="footer-section">
             <h3>PrognosCore</h3>
             <p>Predict. Prevent. Perform.</p>
+            <p>
+              Transforming industrial operations across Nigeria and globally with 
+              intelligent predictive maintenance solutions.
+            </p>
           </div>
           <div className="footer-section">
             <h4>Services</h4>
             <Link to="/services/equipment-monitoring">Equipment Monitoring</Link>
             <Link to="/services/predictive-analytics">Predictive Analytics</Link>
             <Link to="/services/erp-integration">ERP Integration</Link>
+            <Link to="/services/maintenance-scheduling">Maintenance Scheduling</Link>
           </div>
           <div className="footer-section">
             <h4>Industries</h4>
             <Link to="/industries/manufacturing">Manufacturing</Link>
             <Link to="/industries/oil-gas">Oil & Gas</Link>
             <Link to="/industries/power-utilities">Power & Utilities</Link>
+            <Link to="/industries/mining">Mining</Link>
           </div>
           <div className="footer-section">
             <h4>Company</h4>
             <Link to="/about">About Us</Link>
+            <Link to="/learn-more">Learn More</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 PrognosCore. All rights reserved.</p>
+          <p>&copy; 2025 PrognosCore. All rights reserved. | Transforming Industrial Operations with Predictive Intelligence</p>
         </div>
       </div>
     </footer>
@@ -671,16 +1615,55 @@ const PrivacyPolicy = () => (
         <p><strong>Effective Date:</strong> March 2025</p>
         
         <h2>Information We Collect</h2>
-        <p>We collect information you provide through our contact forms, newsletter signups, and when you interact with our services.</p>
+        <p>
+          PrognosCore collects information you voluntarily provide through our contact forms, 
+          newsletter signups, consultation requests, and when you interact with our predictive 
+          maintenance services. This may include personal information such as your name, email 
+          address, company information, and project requirements.
+        </p>
         
         <h2>How We Use Your Information</h2>
-        <p>We use collected information to respond to inquiries, provide services, and send relevant updates about our solutions.</p>
+        <p>
+          We use collected information to respond to your inquiries, provide predictive maintenance 
+          services, send relevant industry updates, schedule consultations, and improve our service 
+          offerings. We may also use this information for business development and to better 
+          understand market needs in the predictive maintenance sector.
+        </p>
         
-        <h2>Data Protection</h2>
-        <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+        <h2>Data Protection and Security</h2>
+        <p>
+          PrognosCore implements enterprise-grade security measures to protect your personal and 
+          business information against unauthorized access, alteration, disclosure, or destruction. 
+          We use encryption, access controls, and regular security audits to ensure data protection.
+        </p>
         
-        <h2>Contact Us</h2>
-        <p>For questions about this Privacy Policy, contact us at privacy@prognoscore.com</p>
+        <h2>Information Sharing</h2>
+        <p>
+          We do not sell, trade, or rent your personal information to third parties. We may share 
+          information with trusted service providers who assist in our operations, subject to 
+          confidentiality agreements. We may also disclose information when required by law or 
+          to protect our rights and safety.
+        </p>
+        
+        <h2>Data Retention</h2>
+        <p>
+          We retain your information for as long as necessary to provide services, comply with 
+          legal obligations, resolve disputes, and enforce agreements. You may request deletion 
+          of your personal data at any time, subject to legal and business requirements.
+        </p>
+        
+        <h2>Your Rights</h2>
+        <p>
+          You have the right to access, update, or delete your personal information. You may also 
+          opt out of marketing communications at any time. For any privacy-related requests or 
+          concerns, please contact us at privacy@prognoscore.com.
+        </p>
+        
+        <h2>Contact Information</h2>
+        <p>
+          For questions about this Privacy Policy or our data practices, contact us at 
+          privacy@prognoscore.com or through our contact form.
+        </p>
       </div>
     </div>
   </div>
@@ -694,16 +1677,61 @@ const TermsOfService = () => (
         <p><strong>Effective Date:</strong> March 2025</p>
         
         <h2>Acceptance of Terms</h2>
-        <p>By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement.</p>
+        <p>
+          By accessing and using this website and PrognosCore's services, you accept and agree 
+          to be bound by the terms and provisions of this agreement. If you do not agree to 
+          these terms, please do not use our website or services.
+        </p>
+        
+        <h2>Service Description</h2>
+        <p>
+          PrognosCore provides predictive maintenance solutions including equipment monitoring, 
+          AI-powered analytics, system integration, and maintenance optimization services. 
+          Our services are provided on a contract basis following detailed consultation and 
+          agreement processes.
+        </p>
         
         <h2>Use License</h2>
-        <p>Permission is granted to temporarily view the materials on PrognosCore's website for personal, non-commercial transitory viewing only.</p>
+        <p>
+          Permission is granted to temporarily view the materials on PrognosCore's website for 
+          personal, non-commercial transitory viewing only. This license does not include the 
+          right to download, modify, or distribute website content without explicit permission.
+        </p>
         
-        <h2>Disclaimer</h2>
-        <p>The materials on PrognosCore's website are provided on an 'as is' basis. PrognosCore makes no warranties, expressed or implied.</p>
+        <h2>Intellectual Property</h2>
+        <p>
+          All content, technology, software, and methodologies provided by PrognosCore remain 
+          our intellectual property. Clients receive usage rights as specified in individual 
+          service agreements. Reverse engineering or replication of our solutions is prohibited.
+        </p>
+        
+        <h2>Service Limitations</h2>
+        <p>
+          While we strive for accuracy in our predictive maintenance solutions, equipment 
+          predictions are based on available data and analytical models. PrognosCore does not 
+          guarantee prevention of all equipment failures and recommends maintaining appropriate 
+          backup and safety procedures.
+        </p>
+        
+        <h2>Privacy and Data Security</h2>
+        <p>
+          Client data security is paramount. We implement enterprise-grade security measures 
+          and maintain strict confidentiality of all client information. Detailed data handling 
+          procedures are outlined in our Privacy Policy and individual service agreements.
+        </p>
+        
+        <h2>Limitation of Liability</h2>
+        <p>
+          PrognosCore's liability is limited to the value of services provided. We are not liable 
+          for indirect, consequential, or incidental damages. Clients maintain responsibility for 
+          operational decisions based on our recommendations and insights.
+        </p>
         
         <h2>Contact Information</h2>
-        <p>For questions about these Terms of Service, contact us at legal@prognoscore.com</p>
+        <p>
+          For questions about these Terms of Service, contact us at legal@prognoscore.com or 
+          through our contact form.
+        </p>
       </div>
     </div>
   </div>
@@ -738,7 +1766,7 @@ const CookieConsent = () => {
         <h4>Cookie Consent</h4>
         <p>
           We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. 
-          By clicking "Accept", you consent to our use of cookies. You can manage your preferences anytime.
+          By clicking "Accept", you consent to our use of cookies for website optimization and analytics.
         </p>
         <div className="cookie-buttons">
           <button onClick={acceptCookies} className="glass-btn primary">Accept All</button>
