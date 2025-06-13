@@ -1753,36 +1753,29 @@ const Footer = () => {
           <div className="footer-section">
             <h3>PrognosCore</h3>
             <p>Predict. Prevent. Perform.</p>
-            <p>
-              Transforming industrial operations across Nigeria and globally with 
-              intelligent predictive maintenance solutions.
-            </p>
           </div>
           <div className="footer-section">
             <h4>Services</h4>
             <Link to="/services/equipment-monitoring">Equipment Monitoring</Link>
             <Link to="/services/predictive-analytics">Predictive Analytics</Link>
             <Link to="/services/erp-integration">ERP Integration</Link>
-            <Link to="/services/maintenance-scheduling">Maintenance Scheduling</Link>
           </div>
           <div className="footer-section">
             <h4>Industries</h4>
             <Link to="/industries/manufacturing">Manufacturing</Link>
             <Link to="/industries/oil-gas">Oil & Gas</Link>
             <Link to="/industries/power-utilities">Power & Utilities</Link>
-            <Link to="/industries/mining">Mining</Link>
           </div>
           <div className="footer-section">
             <h4>Company</h4>
             <Link to="/about">About Us</Link>
-            <Link to="/learn-more">Learn More</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2025 PrognosCore. All rights reserved. | Transforming Industrial Operations with Predictive Intelligence</p>
+          <p>&copy; 2025 PrognosCore. All rights reserved.</p>
         </div>
       </div>
     </footer>
