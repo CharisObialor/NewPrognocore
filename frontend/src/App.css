@@ -13,9 +13,11 @@
   --text-secondary: rgba(255, 255, 255, 0.7);
   --accent-color: #58a6ff;
   --accent-hover: #4a93e8;
-  --gradient-primary: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(33, 38, 45, 0.8));
+  
+  --gradient-primary: linear-gradient(135deg, rgba(9, 105, 218, 0.1), rgba(246, 248, 250, 0.8));
   --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
   --backdrop-blur: blur(15px);
+  
 }
 
 [data-theme="light"] {
@@ -27,7 +29,7 @@
   --text-secondary: rgba(13, 17, 23, 0.7);
   --accent-color: #0969da;
   --accent-hover: #0860ca;
-  --gradient-primary: linear-gradient(135deg, rgba(9, 105, 218, 0.1), rgba(246, 248, 250, 0.8));
+  --gradient-primary: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(33, 38, 45, 0.8));
   --shadow-glass: 0 8px 32px rgba(13, 17, 23, 0.1);
 }
 
@@ -114,7 +116,7 @@ p {
 }
 
 .glass-btn.primary {
-  background: var(--gradient-primary);
+  background: var(--gradient-);
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -1111,7 +1113,7 @@ p {
 }
 
 .social-icons {
-  display: inline-flex;
+  display: grid;
   padding: 0.5rem 0.5rem;
 }
 

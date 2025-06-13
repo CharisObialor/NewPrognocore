@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import axios from "axios";
 import whitelogo from "../src/assets/images/whitelogo.png";
+import darklogo from "../src/assets/images/darklogo.png";
 import instagram from "../src/assets/images/instagram.png";
 import linkedin from "../src/assets/images/linkedin.png";
 import twitter from "../src/assets/images/twitter.png";
@@ -49,6 +50,16 @@ const useTheme = () => {
   }
   return context;
 };
+const ThemeLogo = ({
+  alt = "Prognocore Logo",
+  className = "logo-image",
+  ...props
+}) => {
+  const { theme } = useTheme();
+  const logoSrc = theme === "light" ? darklogo : whitelogo;
+
+  return <img src={logoSrc} alt={alt} className={className} {...props} />;
+};
 
 // Navigation Component
 const Navigation = () => {
@@ -59,7 +70,7 @@ const Navigation = () => {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          <img src={whitelogo} alt="Prognocore Logo" className="logo-image" />
+          <ThemeLogo />
           <span className="logo-text">PrognoCore</span>
         </Link>
 
@@ -144,7 +155,7 @@ const HomePage = () => {
             <br />
             <span className="highlight">Maintenance Solutions</span>
           </h1>
-          <p className="hero-subtitle">Predict. Prevent. Perform.</p>
+          <p className="hero-subtitle">Predict. Prevent. Preform.</p>
           <p className="hero-description">
             PrognoCore empowers industrial operations across Nigeria and
             globally with cutting-edge predictive maintenance technology. Our
@@ -2153,7 +2164,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <img src={whitelogo} alt="Prognocore Logo" className="logo-image" />
+            <ThemeLogo />
             <h3>PrognoCore</h3>
             <p>Predict. Prevent. Preform.</p>
           </div>
@@ -2181,7 +2192,7 @@ const Footer = () => {
             <Link to="/terms">Terms of Service</Link>
           </div>
 
-          <div clssName="footer-section">
+          <div className="footer-section">
             <h4>Follow Us</h4>
             <a
               href="https://www.linkedin.com/company/prognocore"
