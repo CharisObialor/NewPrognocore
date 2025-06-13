@@ -13,6 +13,7 @@ import darklogo from "../src/assets/images/darklogo.png";
 import instagram from "../src/assets/images/instagram.png";
 import linkedin from "../src/assets/images/linkedin.png";
 import twitter from "../src/assets/images/twitter.png";
+import BTP from "../src/assets/images/BTP.png";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -187,10 +188,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img
-            src="https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg"
-            alt="Industrial monitoring dashboard"
-          />
+          <img src={BTP} alt="Industrial monitoring dashboard" />
         </div>
       </section>
 
