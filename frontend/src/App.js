@@ -13,7 +13,7 @@ import darklogo from "../src/assets/images/darklogo.png";
 import instagram from "../src/assets/images/instagram.png";
 import linkedin from "../src/assets/images/linkedin.png";
 import twitter from "../src/assets/images/twitter.png";
-import BTP from "../src/assets/images/BTP.png";
+import BTP from "../src/assets/images/BTP1.png";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
