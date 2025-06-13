@@ -932,155 +932,338 @@ const LearnMorePage = () => {
   return (
     <div className="page">
       <div className="container">
-        <div className="page-header">
-          <h1>How PrognosCore Works</h1>
-          <p>Discover our comprehensive approach to predictive maintenance transformation</p>
+        <div className="learn-more-hero">
+          <h1>The Science Behind Predictive Maintenance</h1>
+          <p className="hero-description">
+            Discover how PrognosCore transforms traditional maintenance into intelligent, data-driven operations 
+            that predict failures before they happen, optimize resources, and maximize equipment performance.
+          </p>
         </div>
-        
-        <div className="learn-more-content">
-          <section className="process-overview glass-card">
-            <h2>Our Proven Methodology</h2>
+
+        {/* Introduction Section */}
+        <section className="predictive-maintenance-intro glass-card">
+          <div className="intro-content">
+            <div className="intro-text">
+              <h2>From Reactive to Predictive: The Evolution of Maintenance</h2>
+              <p>
+                Traditional maintenance approaches—reactive and preventive—are costly, inefficient, and unreliable. 
+                PrognosCore's predictive maintenance technology represents the future of industrial operations, 
+                leveraging IoT sensors, artificial intelligence, and advanced analytics to create a maintenance 
+                strategy that's both proactive and precise.
+              </p>
+              <div className="maintenance-comparison">
+                <div className="maintenance-type">
+                  <h3>❌ Reactive Maintenance</h3>
+                  <p>Wait for failure, then fix. High costs, safety risks, unplanned downtime.</p>
+                </div>
+                <div className="maintenance-type">
+                  <h3>⚠️ Preventive Maintenance</h3>
+                  <p>Schedule based on time/usage. Better than reactive but still inefficient.</p>
+                </div>
+                <div className="maintenance-type highlight-type">
+                  <h3>✅ Predictive Maintenance</h3>
+                  <p>Predict and prevent failures. Optimal timing, maximum efficiency, minimum cost.</p>
+                </div>
+              </div>
+            </div>
+            <div className="intro-visual">
+              <img src="https://images.pexels.com/photos/5475750/pexels-photo-5475750.jpeg" alt="Predictive maintenance technology" />
+            </div>
+          </div>
+        </section>
+
+        {/* Technology Deep Dive */}
+        <section className="technology-deep-dive">
+          <h2>Advanced Technology Stack</h2>
+          <div className="tech-layers">
+            <div className="tech-layer glass-card">
+              <div className="layer-icon">🔬</div>
+              <div className="layer-content">
+                <h3>Data Collection Layer</h3>
+                <p>
+                  Multi-parameter IoT sensors continuously monitor equipment health through vibration analysis, 
+                  thermal imaging, acoustic emission detection, pressure monitoring, and oil analysis.
+                </p>
+                <div className="tech-specs">
+                  <span>• Wireless sensor networks</span>
+                  <span>• 5+ year battery life</span>
+                  <span>• Real-time data streaming</span>
+                  <span>• Edge computing capabilities</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="tech-layer glass-card">
+              <div className="layer-icon">🧠</div>
+              <div className="layer-content">
+                <h3>AI Analytics Layer</h3>
+                <p>
+                  Advanced machine learning algorithms process sensor data to identify patterns, detect anomalies, 
+                  and predict equipment failures with 85%+ accuracy weeks before they occur.
+                </p>
+                <div className="tech-specs">
+                  <span>• Deep learning neural networks</span>
+                  <span>• Anomaly detection algorithms</span>
+                  <span>• Digital twin modeling</span>
+                  <span>• Continuous model improvement</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="tech-layer glass-card">
+              <div className="layer-icon">📊</div>
+              <div className="layer-content">
+                <h3>Intelligence Layer</h3>
+                <p>
+                  Transform raw predictions into actionable insights with intelligent scheduling, resource optimization, 
+                  and integration with existing enterprise systems for seamless operations.
+                </p>
+                <div className="tech-specs">
+                  <span>• Predictive maintenance scheduling</span>
+                  <span>• Resource optimization</span>
+                  <span>• ERP/CMMS integration</span>
+                  <span>• Mobile alert systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Implementation Process */}
+        <section className="implementation-process">
+          <h2>Our Proven Implementation Methodology</h2>
+          <div className="process-timeline">
+            <div className="timeline-item glass-card">
+              <div className="timeline-marker">
+                <span className="phase-number">01</span>
+                <span className="phase-duration">Weeks 1-2</span>
+              </div>
+              <div className="timeline-content">
+                <h3>Discovery & Strategic Planning</h3>
+                <p>
+                  Comprehensive equipment audit, failure analysis, and strategic roadmap development 
+                  tailored to your operational requirements and business objectives.
+                </p>
+                <div className="deliverables">
+                  <h4>Key Deliverables:</h4>
+                  <ul>
+                    <li>Equipment criticality assessment</li>
+                    <li>Baseline maintenance cost analysis</li>
+                    <li>ROI projections and business case</li>
+                    <li>Implementation roadmap</li>
+                    <li>Success metrics definition</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item glass-card">
+              <div className="timeline-marker">
+                <span className="phase-number">02</span>
+                <span className="phase-duration">Weeks 3-4</span>
+              </div>
+              <div className="timeline-content">
+                <h3>System Deployment & Integration</h3>
+                <p>
+                  Strategic sensor placement, network configuration, and integration with existing 
+                  enterprise systems to ensure seamless data flow and operational continuity.
+                </p>
+                <div className="deliverables">
+                  <h4>Key Activities:</h4>
+                  <ul>
+                    <li>IoT sensor installation and configuration</li>
+                    <li>Network infrastructure setup</li>
+                    <li>ERP/CMMS system integration</li>
+                    <li>Data pipeline establishment</li>
+                    <li>Security protocols implementation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item glass-card">
+              <div className="timeline-marker">
+                <span className="phase-number">03</span>
+                <span className="phase-duration">Weeks 5-6</span>
+              </div>
+              <div className="timeline-content">
+                <h3>AI Model Training & Optimization</h3>
+                <p>
+                  Machine learning model development using historical and real-time data to create 
+                  equipment-specific predictive algorithms with maximum accuracy and reliability.
+                </p>
+                <div className="deliverables">
+                  <h4>Technical Focus:</h4>
+                  <ul>
+                    <li>Baseline equipment behavior modeling</li>
+                    <li>Failure pattern recognition training</li>
+                    <li>Prediction accuracy optimization</li>
+                    <li>Alert threshold calibration</li>
+                    <li>Performance validation testing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item glass-card">
+              <div className="timeline-marker">
+                <span className="phase-number">04</span>
+                <span className="phase-duration">Week 7+</span>
+              </div>
+              <div className="timeline-content">
+                <h3>Go-Live & Continuous Optimization</h3>
+                <p>
+                  Full system activation with comprehensive training, ongoing support, and continuous 
+                  optimization to ensure maximum value realization and long-term success.
+                </p>
+                <div className="deliverables">
+                  <h4>Ongoing Support:</h4>
+                  <ul>
+                    <li>Team training and knowledge transfer</li>
+                    <li>24/7 system monitoring</li>
+                    <li>Continuous model improvement</li>
+                    <li>Performance reporting and optimization</li>
+                    <li>Strategic consultation and expansion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI and Business Impact */}
+        <section className="business-impact glass-card">
+          <h2>Measurable Business Impact</h2>
+          <div className="impact-grid">
+            <div className="impact-category">
+              <h3>Operational Excellence</h3>
+              <div className="impact-metrics">
+                <div className="metric-item">
+                  <span className="metric-value">70%</span>
+                  <span className="metric-label">Reduction in unplanned downtime</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">95%+</span>
+                  <span className="metric-label">Equipment availability target</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">85%+</span>
+                  <span className="metric-label">Failure prediction accuracy</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="impact-category">
+              <h3>Financial Performance</h3>
+              <div className="impact-metrics">
+                <div className="metric-item">
+                  <span className="metric-value">45%</span>
+                  <span className="metric-label">Reduction in maintenance costs</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">40%</span>
+                  <span className="metric-label">Extension in equipment lifespan</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">6-12</span>
+                  <span className="metric-label">Months typical ROI period</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="impact-category">
+              <h3>Strategic Advantages</h3>
+              <div className="impact-metrics">
+                <div className="metric-item">
+                  <span className="metric-value">50%</span>
+                  <span className="metric-label">Improvement in maintenance efficiency</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">30%</span>
+                  <span className="metric-label">Reduction in spare parts inventory</span>
+                </div>
+                <div className="metric-item">
+                  <span className="metric-value">100%</span>
+                  <span className="metric-label">Visibility into equipment health</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Industry Applications */}
+        <section className="industry-applications">
+          <h2>Real-World Applications Across Industries</h2>
+          <div className="application-examples">
+            <div className="application-card glass-card">
+              <div className="app-icon">🏭</div>
+              <h3>Manufacturing Excellence</h3>
+              <p>
+                Production line optimization with real-time monitoring of critical machinery, 
+                reducing quality defects by 60% and improving overall equipment effectiveness.
+              </p>
+              <div className="case-example">
+                <strong>Case Study:</strong> Nigerian textile manufacturer achieved 40% increase in 
+                production efficiency within 6 months of implementation.
+              </div>
+            </div>
+
+            <div className="application-card glass-card">
+              <div className="app-icon">🛢️</div>
+              <h3>Oil & Gas Reliability</h3>
+              <p>
+                Critical equipment monitoring in offshore platforms and refineries, ensuring 
+                99.9% uptime and preventing catastrophic failures in harsh environments.
+              </p>
+              <div className="case-example">
+                <strong>Case Study:</strong> West African oil platform reduced maintenance costs by 
+                50% while improving safety metrics significantly.
+              </div>
+            </div>
+
+            <div className="application-card glass-card">
+              <div className="app-icon">⚡</div>
+              <h3>Power Generation Optimization</h3>
+              <p>
+                Grid reliability enhancement through transformer monitoring and generator optimization, 
+                extending asset lifespan by 30% and reducing operational costs.
+              </p>
+              <div className="case-example">
+                <strong>Case Study:</strong> Regional power utility achieved 25% reduction in O&M 
+                costs while improving grid stability.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="learn-more-cta glass-card">
+          <div className="cta-content">
+            <h2>Ready to Transform Your Operations?</h2>
             <p>
-              PrognosCore follows a systematic approach to implementing predictive maintenance solutions, 
-              ensuring maximum value delivery and seamless integration with your existing operations.
+              Join leading Nigerian and international companies that have revolutionized their 
+              maintenance strategies with PrognosCore's intelligent predictive maintenance solutions.
             </p>
-          </section>
-
-          <section className="process-step glass-card">
-            <div className="step-number">1</div>
-            <div className="step-content">
-              <h2>Assessment & Strategy Development</h2>
-              <p>
-                Our experts conduct comprehensive equipment audits and operational assessments to understand 
-                your unique challenges, maintenance practices, and improvement opportunities. We analyze 
-                historical maintenance data, equipment criticality, and operational constraints to develop 
-                a customized predictive maintenance strategy.
-              </p>
-              <div className="step-details">
-                <h3>Key Activities:</h3>
-                <ul>
-                  <li>Equipment criticality analysis</li>
-                  <li>Current maintenance practice assessment</li>
-                  <li>Failure mode and effects analysis (FMEA)</li>
-                  <li>ROI projections and business case development</li>
-                  <li>Technology roadmap creation</li>
-                </ul>
+            <div className="cta-stats">
+              <div className="cta-stat">
+                <span className="stat-number">8+</span>
+                <span className="stat-label">Industries Served</span>
+              </div>
+              <div className="cta-stat">
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Successful Implementations</span>
+              </div>
+              <div className="cta-stat">
+                <span className="stat-number">24/7</span>
+                <span className="stat-label">System Monitoring</span>
               </div>
             </div>
-          </section>
-          
-          <section className="process-step glass-card">
-            <div className="step-number">2</div>
-            <div className="step-content">
-              <h2>Sensor Deployment & Data Collection</h2>
-              <p>
-                We deploy advanced IoT sensor networks tailored to your equipment types and operating 
-                conditions. Our sensors continuously collect multi-parameter data including vibration, 
-                temperature, pressure, acoustic emissions, and more, establishing baseline equipment 
-                behavior patterns.
-              </p>
-              <div className="step-details">
-                <h3>Technology Stack:</h3>
-                <ul>
-                  <li>Wireless vibration sensors for rotating machinery</li>
-                  <li>Thermal imaging cameras for electrical equipment</li>
-                  <li>Acoustic emission sensors for structural monitoring</li>
-                  <li>Pressure and flow sensors for fluid systems</li>
-                  <li>Edge computing devices for real-time processing</li>
-                </ul>
-              </div>
+            <div className="cta-buttons">
+              <Link to="/contact" className="glass-btn primary">Schedule Free Consultation</Link>
+              <Link to="/industries" className="glass-btn secondary">Explore Industry Solutions</Link>
             </div>
-          </section>
-          
-          <section className="process-step glass-card">
-            <div className="step-number">3</div>
-            <div className="step-content">
-              <h2>AI Model Training & Pattern Recognition</h2>
-              <p>
-                Our machine learning algorithms analyze collected data to identify normal operating patterns, 
-                detect anomalies, and develop predictive models specific to your equipment. The AI continuously 
-                learns and improves its predictions as more data becomes available.
-              </p>
-              <div className="step-details">
-                <h3>AI Capabilities:</h3>
-                <ul>
-                  <li>Unsupervised anomaly detection algorithms</li>
-                  <li>Failure pattern recognition using deep learning</li>
-                  <li>Remaining useful life (RUL) prediction models</li>
-                  <li>Multivariate time series analysis</li>
-                  <li>Digital twin development for complex systems</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          
-          <section className="process-step glass-card">
-            <div className="step-number">4</div>
-            <div className="step-content">
-              <h2>Actionable Insights & Optimization</h2>
-              <p>
-                Transform predictions into actionable maintenance recommendations with intelligent scheduling, 
-                resource optimization, and continuous performance monitoring. Our system integrates with 
-                your existing workflows to ensure seamless adoption and maximum operational impact.
-              </p>
-              <div className="step-details">
-                <h3>Value Delivery:</h3>
-                <ul>
-                  <li>Proactive maintenance scheduling based on condition</li>
-                  <li>Resource optimization and spare parts planning</li>
-                  <li>Real-time alerts and mobile notifications</li>
-                  <li>Performance dashboards and analytics</li>
-                  <li>Continuous improvement recommendations</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <section className="implementation-timeline glass-card">
-            <h2>Implementation Timeline</h2>
-            <div className="timeline-grid">
-              <div className="timeline-phase">
-                <h3>Weeks 1-2: Planning & Design</h3>
-                <p>Assessment, strategy development, and system design</p>
-              </div>
-              <div className="timeline-phase">
-                <h3>Weeks 3-4: Deployment & Integration</h3>
-                <p>Sensor installation, system integration, and initial configuration</p>
-              </div>
-              <div className="timeline-phase">
-                <h3>Weeks 5-6: Testing & Optimization</h3>
-                <p>System testing, model training, and performance optimization</p>
-              </div>
-              <div className="timeline-phase">
-                <h3>Week 7+: Go-Live & Support</h3>
-                <p>Full system activation, user training, and ongoing support</p>
-              </div>
-            </div>
-          </section>
-
-          <section className="success-metrics glass-card">
-            <h2>Success Metrics & KPIs</h2>
-            <p>We measure success through tangible improvements in operational performance:</p>
-            <div className="metrics-grid">
-              <div className="metric">
-                <h3>Equipment Availability</h3>
-                <p>Target: 95%+ uptime achievement</p>
-              </div>
-              <div className="metric">
-                <h3>Maintenance Cost Reduction</h3>
-                <p>Target: 25-45% cost savings</p>
-              </div>
-              <div className="metric">
-                <h3>Failure Prediction Accuracy</h3>
-                <p>Target: 85%+ prediction accuracy</p>
-              </div>
-              <div className="metric">
-                <h3>Mean Time to Repair (MTTR)</h3>
-                <p>Target: 40%+ reduction in repair time</p>
-              </div>
-            </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   );
