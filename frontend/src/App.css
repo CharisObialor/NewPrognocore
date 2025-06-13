@@ -176,6 +176,12 @@ p {
 
 .nav-logo {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-image{
+  height: 40px;
+  margin-right: 8px;
 }
 
 .logo-text {
@@ -1104,6 +1110,20 @@ p {
   color: var(--text-secondary);
 }
 
+.social-icons {
+  display: inline-flex;
+  padding: 0.5rem 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+}
 /* Legal Pages */
 .legal-content {
   max-width: 800px;
